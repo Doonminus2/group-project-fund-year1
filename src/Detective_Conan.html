@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detective Conan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Detective Conan</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/DetectiveConan main page.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Detective Conan</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong> Mystery, Detective</li>
+              <li><strong>Episodes:</strong> 1000+</li>
+              <li><strong>Studio:</strong> TMS Entertainment</li>
+              <li><strong>Release Year:</strong> 1996</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            คุโด้ ชินอิจิ นักสืบหนุ่ม นักเรียนมัธยมปลาย โรงเรียนเทย์ตัน
+            ซึ่งกำลังโด่งดังสุดขีด เพราะคลี่คลายคดียากๆมาหลายคดี
+            และได้เป็นผู้ช่วยของส.เมงูเระด้วย วันหนึ่ง ชินอิจิ
+            ได้ไปเที่ยวด้วยกันกับ โมริ รัน เพื่อนรัก
+            และเผอิญได้พบกับกลุ่มชายชุดดำท่าทางน่าสงสัย
+            ด้วยความที่เป็นคนช่างสงสัย ชินอิจิก็ได้สะกดรอยตามเขาไป
+            และก็ได้ยินเรื่องที่เขาคุยกับ แต่ทว่า ชินอิจิก็โดนชายชุดดำลอบทำร้าย
+            และโดนจับกรอกยา จนทำให้ตัวหดเล็กลงกลายเป็นเด็กอายุ 6ขวบ พอรู้สึกตัว
+            ชินอิจิก็รีบไปหาดร.อากาสะ เพื่อขอความช่วยเหลือ
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <iframe
+            class="w-full h-60"
+            src="https://www.youtube.com/embed/BWBL-ffwCgQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/conan edogawa.jpg"
+                alt="Conan Edogawa"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Conan Edogawa</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Age: 6-7 (as Conan); 17 (as Shinichi) Height: Unknown (as
+                Conan); 174 cm (as Shinichi) Weight: 18 kg (as Conan) Date of
+                Birth: May 4 Relatives: Yuusaku Kudou (father) & Yukiko Kudou
+                (mother) Nicknames: Cool Kid, Silver Bullet-kun, Glasses Kid,
+                Holmes' Apprentice.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/ran mouri.jpg"
+                alt="Ran Mouri"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Ran Mouri</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Mouri Ran is a childhood friend of Kudou Shinichi. She is the
+                daughter of Mouri Kogorou and Kisaki Eri. Her biggest goal is to
+                reunite her parents, who separated when she was seven. Her best
+                friend is Suzuki Sonoko, who often teases her about her
+                relationship with Shinichi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

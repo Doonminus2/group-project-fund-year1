@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haikyuu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Haikyuu</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/Haikyuu main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Haikyuu</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong>Sports</li>
+              <li><strong>Episodes:</strong> 25</li>
+              <li><strong>Studio:</strong> Production I.G</li>
+              <li><strong>Release Year:</strong>Spring 2014</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Ever since having witnessed the "Little Giant" and his astonishing
+            skills on the volleyball court, Shouyou Hinata has been bewitched by
+            the dynamic nature of the sport. Even though his attempt to make his
+            debut as a volleyball regular during a middle school tournament went
+            up in flames, he longs to prove that his less-than-impressive height
+            ceases to be a hindrance in the face of his sheer will and
+            perseverance. When Hinata enrolls in Karasuno High School, the
+            Little Giant's alma mater, he believes that he is one step closer to
+            his goal of becoming a professional volleyball player. Although the
+            school only retains a shadow of its former glory, Hinata's
+            conviction isn't shaken until he learns that Tobio Kageyama—the
+            prodigy who humiliated Hinata's middle school volleyball team in a
+            crushing defeat—is now his teammate. To fulfill his desire of
+            leaving a mark on the realm of volleyball—so often regarded as the
+            domain of the tall and the strong—Hinata must smooth out his
+            differences with Kageyama. Only when Hinata learns what it takes to
+            be a part of a team will he be able to join the race to the top in
+            earnest.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/MqVA0dl36bc"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/hinata.jpg"
+                alt="Hianta"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Shouyou Hinata</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Hinata has an unusually high ability to jump. Since he was
+                young, Hinata trained his legs to compensate for his lack of
+                height. He joins Karusuno High School Volleyball team and amazes
+                the team with his natural affinity as a spiker. Although he is a
+                complete beginner and never had any experience playing in a
+                volleyball team, he grows rapidly through each match.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/kagetama.jpg"
+                alt="Kagetama"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Tobio Kageyama</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+               Kageyama was initially referred to as "King of the Court," a derogatory nickname that insinuates his autocratic nature, given to him by his former teammates at Kitagawa Daiichi during his late middle school days. Kageyama is widely regarded as a stunning prodigy and an absolute genius by many of the prefecture's players and coaches. After joining Karasuno, he manages to change his attitude for the better with the help of his new teammates and rediscover what it means to be part of a team.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

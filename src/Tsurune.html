@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tsurune</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Tsurune</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/Tsurune main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Tsurune</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong>Sports</li>
+              <li><strong>Episodes:</strong> 13</li>
+              <li><strong>Studio:</strong> Kyoto Animation</li>
+              <li><strong>Release Year:</strong>Fall 2018</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            "Tsurune"—It's the sound made by the bowstring when an arrow is
+            released, and the sound that inspired Minato Narumiya to learn
+            kyudo, a modern Japanese martial art focusing on archery. However,
+            an incident during his last middle school tournament caused him to
+            quit the sport. But soon, many factors conspire to make Minato take
+            up the bow once again: the start of a new kyudo club in his high
+            school, a chance encounter with a mysterious archer, and the support
+            of his childhood friends, Seiya Takehaya and Ryouhei Yamanouchi.
+            Together with his childhood friends and his new teammates, Kaito
+            Onogi and Nanao Kisaragi, Minato rekindles his love for kyudo and
+            works with his team toward their aim of winning the prefectural
+            tournament.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/6wHkaDhMKt8"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/masaki.jpg"
+                alt="masaki"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Masaki Takigawa</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+               Masaki Takigawa is a mysterious man that Minato meets at the "Evening Forest Archery Dojo." He has a fluttering personality but top-tier and beautiful archery skills. He enjoys coffee, so he will drink canned coffee at the archery dojo. There's a reason he draws his bow at the "Evening Forest Archery Dojo" when no one is around.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/seiya.jpg"
+                alt="seiya"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Seiya Takehaya</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Seiya Takehaya is Minato's close friend who serves as president
+                of the archery club. He also served as the student council
+                president in middle school. he is intellectual, cares for
+                others, and is able to be relied upon. He usually wears glasses
+                but puts contacts in when drawing his bow. He has a mole near
+                his left eye that can be seen once he removes his glasses. He is
+                the son of a physician and has a dog named "Bear." He also has
+                peculiar naming tastes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

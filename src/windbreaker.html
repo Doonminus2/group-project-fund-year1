@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wind-breaker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">wind-breaker</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/wind breaker main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Wind-Breaker</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong>Action</li>
+              <li><strong>Episodes:</strong> 13</li>
+              <li><strong>Studio:</strong> CloverWorks</li>
+              <li><strong>Release Year:</strong>Spring 2024</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Hunters are specialized in a wide variety of fields, ranging from
+            treasure hunting to cooking. They have access to otherwise
+            unavailable funds and information that allow them to pursue their
+            dreams and interests. However, being a hunter is a special
+            privilege, only attained by taking a deadly exam with an extremely
+            low success rate. Gon Freecss, a 12-year-old boy with the hope of
+            finding his missing father, sets out on a quest to take the Hunter
+            Exam. Along the way, he picks up three companions who also aim to
+            take the dangerous test: the revenge-seeking Kurapika, aspiring
+            doctor Leorio Paladiknight, and a mischievous child the same age as
+            Gon, Killua Zoldyck. As the four aspiring hunters embark on a
+            perilous adventure, they fight for their dreams while defying the
+            odds.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/k5qM1PoLmUc"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Haruka.jpg"
+                alt="Haruka Sakura"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Haruka Sakura</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Haruka Sakura is the protagonist of the Wind Breaker manga
+                series. He is a first-year student at Furin High School and
+                member of Bofurin's Vaisravana Unit as well as the first year
+                Grade Captain. Constantly judged by his physical appearance,
+                Sakura adopts a delinquent persona that others have projected
+                onto him and moves to Makochi to attend Furin High, an
+                infamously rough school, and fight his way to the top.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Hayato.jpg"
+                alt="Hayato Suou"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Hayato Suou</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Suou is someone who is always smiling and calm, even in critical
+                situations. He never shows his irritation, annoyance or any
+                negative emotion. He studies situations and tries to react to
+                them in the right way, in conflicts as well as in situations
+                with certain comrades. His character resembles that of an
+                aristocrat, without entering into superiority, and his fighting
+                style refers a lot to his personality since he never uses his
+                fists, rather his palms. Suou practices martial arts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

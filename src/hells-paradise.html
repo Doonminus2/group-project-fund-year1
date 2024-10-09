@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hells-paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">HellsParadise</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/HellsParadise.png"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">HellsParadise</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong> Action, Adventure, Fantasy</li>
+              <li><strong>Episodes:</strong> 13</li>
+              <li><strong>Studio:</strong>MAPPA</li>
+              <li><strong>Release Year:</strong>Spring 2023</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Sentenced to death, ninja Gabimaru the Hollow finds himself
+            apathetic. After leading a blood-soaked life, Gabimaru believes he
+            deserves to die. However, every attempt to execute him inexplicably
+            fails. Finally, Sagiri Yamada Asaemon, a fledgling member of a famed
+            executioner clan, is asked to take Gabimaru's life; yet Sagiri makes
+            no move to kill him as requested. Insisting that Gabimaru will not
+            die because of his love for his wife, Sagiri instead offers him the
+            chance to obtain a full pardon for his crimes. If he can travel to
+            the island of Shinsekyo and obtain the Elixir of Life—which
+            supposedly grants immortality—and bring it back for the shogun, then
+            his freedom will be assured. But of the many who have traveled to
+            Shinsekyo in search of the mythical Elixir, not a single person has
+            returned sound of mind, if at all. Though unaware of the numerous
+            dangers ahead, Gabimaru decides to accept the offer—alongside ten
+            other death row convicts—in hope that he and his wife may finally
+            live in peace.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/kFQ2Ap8g4aw"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Gabimaru.jpg"
+                alt="Gabimaru"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Gabimaru</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                He is a very calm and serious person who is convinced that he
+                has no feelings. Therefore, he behaves monotonously and only
+                talks when it is necessary. However, his true personality is
+                revealed when he is alone with his wife. You can tell that he is
+                very shy in front of her and that's why she can easily tease
+                him. His wife is the only person he deeply trusts and cares
+                about because he is madly in love with her.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/sagiri.jpg"
+                alt="Sagiri Yamada Asaemon"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Sagiri Yamada Asaemon</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Yamada Asaemon Sagiri is the 12th rank Asaemon in the Yamada Clan. After the shogun sent criminals to Kotaku to find the Elixir of Life, she was tasked with being Gabimaru's executioner.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

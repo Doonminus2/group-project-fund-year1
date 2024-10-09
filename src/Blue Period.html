@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Period</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Blue Period</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/Blue Period  main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Blue Period</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong> Drama</li>
+              <li><strong>Episodes:</strong> 12</li>
+              <li><strong>Studio:</strong> Seven Arcs</li>
+              <li><strong>Release Year:</strong>Fall 2021</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Second-year high school student Yatora Yaguchi is a delinquent with
+            excellent grades, but is unmotivated to find his true calling in
+            life. Yatora spends his days working hard to maintain his academic
+            standing while hanging out with his equally unambitious friends.
+            However, beneath his carefree demeanor, Yatora does not enjoy either
+            activity and wishes he could find something more fulfilling. While
+            mulling over his predicament, Yatora finds himself staring at a
+            vibrant landscape of Shibuya. Unable to express how he feels about
+            the unusually breathtaking sight, he picks up a paintbrush, hoping
+            his thoughts will be conveyed on canvas. After receiving praise for
+            his work, the joy he feels sends him on a journey to enter the
+            extremely competitive Tokyo University of the Arts—a school that
+            only accepts one in every two hundred applicants. Facing talented
+            peers, a lack of understanding of the fine arts, and struggles to
+            obtain his parents’ approval, Yatora is confronted by much
+            adversity. In the hopes of securing one of the five prestigious
+            spots in his program of choice, Yatora must show that his
+            inexperience does not define him.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/IoE7Z3FKRQ0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/yagauchi.jpg"
+                alt="Yatora Yaguchi"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Yatora Yaguchi</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Yatora is a second-year high school student with remarkably high
+                grades considering his delinquent lifestyle. Yatora feels like
+                his life is dull and predictable, that is, until he comes across
+                his senpai, Mori, painting in the Art Club. He discovers his
+                passion for painting and dedicates his remaining school years to
+                it, aiming to pass Tokyo University of the Arts entrance exam.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Ryuuji Ayukawa.jpg"
+                alt="Ryuuji Ayukawa "
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Ryuuji Ayukawa</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Yuka is boisterous and seemingly confident, despite their
+                underlying anxieties. They act in a cutesy and flamboyant manner
+                which tends to attract a lot of people to them.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

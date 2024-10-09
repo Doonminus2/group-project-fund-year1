@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-piece</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">OnePiece</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/one piece main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">OnePiece</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong> Action, Adventure, Fantasy</li>
+              <li><strong>Episodes:</strong> 1000+</li>
+              <li><strong>Studio:</strong> Toei Animation</li>
+              <li><strong>Release Year:</strong>Fall 1999</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Barely surviving in a barrel after passing through a terrible
+            whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship
+            under attack by fearsome pirates. Despite being a naive-looking
+            teenager, he is not to be underestimated. Unmatched in battle, Luffy
+            is a pirate himself who resolutely pursues the coveted One Piece
+            treasure and the King of the Pirates title that comes with it. The
+            late King of the Pirates, Gol D. Roger, stirred up the world before
+            his death by disclosing the whereabouts of his hoard of riches and
+            daring everyone to obtain it. Ever since then, countless powerful
+            pirates have sailed dangerous seas for the prized One Piece only to
+            never return. Although Luffy lacks a crew and a proper ship, he is
+            endowed with a superhuman ability and an unbreakable spirit that
+            make him not only a formidable adversary but also an inspiration to
+            many. As he faces numerous challenges with a big smile on his face,
+            Luffy gathers one-of-a-kind companions to join him in his ambitious
+            endeavor, together embracing perils and wonders on their
+            once-in-a-lifetime adventure.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/fX9NK-_YqlI"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/luffy.jpg"
+                alt="Yuuma Kuga"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Luffy Monkey D.</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Luffy is the captain of the Straw Hat Pirates and is best
+                friends with all of them and values them over all else. At first
+                glance, Luffy does not appear to be very intelligent, often
+                seeing things in a childish manner and can easily be amazed by
+                the simplest things. However, because he views the world in a
+                straightforward and simple manner, he is occasionally the only
+                person who can see past the events and see what should be done.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/zoro.jpg"
+                alt="Chika  Amatori"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Zoro Roronoa</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Zoro was the first crew member to be recruited by Luffy. Zoro is
+                a skilled swordsman who fights with his own unique sword style
+                known as santoryu (three katana fighting style). This is
+                achieved by using one katana in each hand and another in his
+                mouth. He is also seen fighting with only one or two swords.
+                When in a serious fight he ties his bandana, normally tied on
+                the arm, on his head.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

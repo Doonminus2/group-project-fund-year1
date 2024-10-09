@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demon-Slayer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Demon-Slayer</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/demo slater main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Demon-Slayer</h2>
+            <ul class="mt-2">
+              <li>
+                <strong>Genre:</strong> Action, Award Winning, Supernatural
+              </li>
+              <li><strong>Episodes:</strong> 26</li>
+              <li><strong>Studio:</strong> ufotable</li>
+              <li><strong>Release Year:</strong>Spring 2019</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Ever since the death of his father, the burden of supporting the
+            family has fallen upon Tanjirou Kamado's shoulders. Though living
+            impoverished on a remote mountain, the Kamado family are able to
+            enjoy a relatively peaceful and happy life. One day, Tanjirou
+            decides to go down to the local village to make a little money
+            selling charcoal. On his way back, night falls, forcing Tanjirou to
+            take shelter in the house of a strange man, who warns him of the
+            existence of flesh-eating demons that lurk in the woods at night.
+            When he finally arrives back home the next day, he is met with a
+            horrifying sight—his whole family has been slaughtered. Worse still,
+            the sole survivor is his sister Nezuko, who has been turned into a
+            bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to
+            avenge his family and stay by his only remaining sibling. Alongside
+            the mysterious group calling themselves the Demon Slayer Corps,
+            Tanjirou will do whatever it takes to slay the demons and protect
+            the remnants of his beloved sister's humanity.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/wyiZWYMilgk"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Tanjirou.jpg"
+                alt="Hianta"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Tanjirou Kamado</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Tanjirou Kamado is the main protagonist of Kimetsu no Yaiba, who
+                becomes a Demon Hunter and joins the Demon Killing Corps to hunt
+                down the demon who murdered his family and turned his sister
+                Nezuko into a demon. Tanjirou is kind by nature and has been
+                described by others as having very gentle eyes. He has a great
+                deal of determination and will not give up once he has a goal to
+                achieve, an example being finding a cure for Nezuko. Even though
+                he is relatively strong on his own, he isn't opposed to asking
+                others for help when he needs it. He is very protective of his
+                friends and even more so of his younger sister. His biggest
+                attribute is his ability to empathize with anyone, even demons.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/nezuko.jpg"
+                alt="Kagetama"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Nezuko Kamado</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Nezuko is Tanjirou's sisterShe was turned into a Demon by
+                Kibutsuji Muzan. When the Demon Slayers were fighting Hantengu,
+                Nezuko managed to overcome her weakness to the sun, and
+                partially gain her ability to speak back. Thanks to Tamayo's
+                work for giving her medicine, Nezuko finally returns to being a
+                human in Demon Slayer
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragonball</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">Dragonball</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/dragobball main.webp"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Dragonball</h2>
+            <ul class="mt-2">
+              <li>
+                <strong>Genre:</strong> Action, Adventure, Comedy, Fantasy
+              </li>
+              <li><strong>Episodes:</strong> 153</li>
+              <li><strong>Studio:</strong> Toei Animation</li>
+              <li><strong>Release Year:</strong>Winter 1986</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Gokuu Son is a young boy who lives in the woods all alone—that is,
+            until a girl named Bulma runs into him in her search for a set of
+            magical objects called the "Dragon Balls." Since the artifacts are
+            said to grant one wish to whoever collects all seven, Bulma hopes to
+            gather them and wish for a perfect boyfriend. Gokuu happens to be in
+            possession of a dragon ball, but unfortunately for Bulma, he refuses
+            to part ways with it, so she makes him a deal: he can tag along on
+            her journey if he lets her borrow the dragon ball's power. With
+            that, the two set off on the journey of a lifetime. They don't go on
+            the journey alone. On the way, they meet the old Muten-Roshi and
+            wannabe disciple Kuririn, with whom Gokuu trains to become a
+            stronger martial artist for the upcoming World Martial Arts
+            Tournament. However, it's not all fun and games; the ability to make
+            any wish come true is a powerful one, and there are others who would
+            do much worse than just wishing for a boyfriend. To stop those who
+            would try to abuse the legendary power, they train to become
+            stronger fighters, using their newfound strength to help the people
+            around them along the way.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/CYcrmsdZuyw"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/gokuu.jpg"
+                alt="goku"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Gokuu Son</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Originally named Kakarot, Gokuu is born a member of a race of
+                extraterrestrials called the Saiyans. Shortly following his
+                birth, Gokuu is sent from his native planet Vegeta to Earth, for
+                potential selling on the intergalactic market by destroying all
+                its life; Goku was also sent away to escape Freeza's genocide of
+                the Saiyans. Once he lands on Earth, he is adopted by an old man
+                named Gohan (who is later just called Grandpa Gohan).
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/bulma.jpg"
+                alt="Bulma"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Bulma</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Bulma is originally a secondary main character, but her role is
+                quickly downplayed as the series continues, even though she does
+                remain an important support character for most of the series.
+                Bulma is a direct parody of the character Xuanzang from the
+                Chinese novel Journey to the West. Even though Bulma's character
+                parodies a monk, her Japanese name "Buruma" is the brand of a
+                popular gym short worn by girls in Japan. Her re-adapted name
+                Bulma is a direct take on the word "bloomers," which was a
+                popular brand of women's underwear in the early 20th century.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

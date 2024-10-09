@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>black-clover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05);
+        /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">black clover</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/blackcover main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">Black Cover</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong> Action, Comedy, Fantasy</li>
+              <li><strong>Episodes:</strong> 170</li>
+              <li><strong>Studio:</strong> Pierrot</li>
+              <li><strong>Release Year:</strong> Fall 2017</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+           เนื้อเรื่อง Black Clover
+            ในอดีตมนุษย์นั้นเกือบถูกเทพอสูรทำลายล้างเผ่าพันธุ์แต่ว่ามีชายคนหนึ่งได้ปราบเทพอสูรเพื่อช่วยโลกไว้ได้
+            จากนั้นถูกเรียกว่าจักรพรรดิเวทมนตร์(รุ่นแรก)แล้วก่อตั้งอาณาจักรโคลเวอร์ขึ้นมาและกลายเป็นตำนาน
+            หลังจากนั้น
+            เวลาผ่านหลายยุคสมัยไปที่อาณาจักรโคลเวอร์มีการเหยียบชนชั้นกัน
+            เวทมนตร์คือทุกสิ่ง ข่มเหงผู้อ่อนแอ จนปัจจุบันเด็กหนุ่ม 2
+            คนที่เป็นเด็กกำพร้าจากหมู่บ้านฮาจที่เป็นแถบโลกที่ถูกทอดทิ้ง
+            โดยทั้งคู่ชื่อว่า อัสตากับยูโน
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/CSR7_V02S5Y"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Asta.jpg"
+                alt="Asta"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Asta</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Asta is an orphan who was left under the care of a church in the
+                village of Hage. He has dreams of being the Wizard King,
+                however, he is unable to use magic and trains a lot to have good
+                physical strength. The grimoire he received held a five leaf
+                clover, a number never heard of before. A four-leaved clover is
+                considered extremely lucky, but within a five-leaved clover,
+                resides a demon.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Yuno.jpg"
+                alt="Yuno"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Yuno</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Yuno was left, along with Asta, in front of a church in a
+                village called Hage when he was an infant. He grew up at the
+                church and spends most of his day with Asta. Sometime later, a
+                thug tries to take his necklace away from him and sell it for
+                the money. Fortunately, Asta steps in and tries to take it back.
+                At the end, the thug decided to leave without the necklace after
+                Asta keep charging at him. Since then, Yuno stopped crying and
+                decides to take Asta's dream to be the Magic Emperor as his own
+                as well.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

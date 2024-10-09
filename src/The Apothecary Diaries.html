@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Apothecary Diaries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">The Apothecary Diaries</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/The Apothecary Diaries mian.avif"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">The Apothecary Diaries</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong>Drama, Mystery</li>
+              <li><strong>Episodes:</strong> 24</li>
+              <li><strong>Studio:</strong> OLM, TOHO animation STUDIO</li>
+              <li><strong>Release Year:</strong>all 2023</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            Maomao, an apothecary's daughter, has been plucked from her peaceful
+            life and sold to the lowest echelons of the imperial court. Now
+            merely a maid, Maomao settles into her new mundane life and hides
+            her extensive knowledge of medicine in order to avoid any unwanted
+            attention. Not long after Maomao's arrival, the emperor's infant
+            children inexplicably begin to experience grave symptoms—almost as
+            if a curse has been cast. The curious Maomao easily solves the
+            mystery and, to remain out of the limelight, attempts to leave an
+            anonymous tip. Unfortunately, the dashing and perceptive eunuch
+            Jinshi sees through it and manages to single her out. In recognition
+            of her talent, Maomao is promoted to lady-in-waiting for the
+            emperor's favorite concubine, Gyokuyou. As Maomao continues to
+            remedy the numerous ailments afflicting the imperial court, her
+            pharmaceutical expertise quickly proves indispensable.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/3lfb_KeqdEM"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/maomao.jpg"
+                alt="masaki"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">MaoMAO</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Maomao became a maidservant to the Emperor's harem after being
+                kidnapped and sold. She used to live with her father as a
+                pharmacist in the red light district and is very knowledgeable
+                about medicine and poisons but isn't very interested in other
+                humans.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Jinshi.jpg"
+                alt="seiya"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Jinshi</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Jinshi is the deuteragonist of Kusuriya no Hitorigoto. He
+                appears to be beautiful eunuch who was placed in charge of the
+                inner palace and often requests for Maomao to solve mysteries in
+                the palace in exchange for rare medicines. He finds Maomao's
+                apathy toward him refreshing and amusing. Later, his childish
+                curiosity evolves into a one-sided romantic affection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

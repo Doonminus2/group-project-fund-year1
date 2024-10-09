@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Trigger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .anime-cover {
+        width: 100vw; /* Fit to screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover transition */
+      }
+      .anime-cover:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        filter: brightness(1.1); /* Increase brightness on hover */
+      }
+      .section-header {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .character-img {
+        width: 150px; /* Smaller fixed width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit max height to prevent stretching */
+        object-fit: cover; /* Ensure the image fits the container */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+      }
+
+      .character-img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white text-center">
+      <h1 class="text-3xl font-bold">World Trigger</h1>
+    </header>
+
+    <div class="container mx-auto p-4">
+      <!-- Anime Header Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex flex-col">
+          <!-- Banner Image -->
+          <img
+            src="/images/world trigger main.jpg"
+            alt="Anime Cover"
+            class="anime-cover rounded-lg"
+          />
+          <div class="mt-6">
+            <h2 class="text-2xl font-bold">World Trigger</h2>
+            <ul class="mt-2">
+              <li><strong>Genre:</strong>Action, Sci-Fi</li>
+              <li><strong>Episodes:</strong> 73</li>
+              <li><strong>Studio:</strong> Toei Animation</li>
+              <li><strong>Release Year:</strong>Fall 2014</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Synopsis Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Synopsis</h3>
+          <p class="text-gray-700 mt-2">
+            When a gate to another world suddenly opens on Earth, Mikado City is
+            invaded by strange creatures known as "Neighbors," malicious beings
+            impervious to traditional weaponry. In response to their arrival, an
+            organization called the Border Defense Agency has been established
+            to combat the Neighbor menace through special weapons called
+            "Triggers." Even though several years have passed after the gate
+            first opened, Neighbors are still a threat and members of Border
+            remain on guard to ensure the safety of the planet. Despite this
+            delicate situation, members-in-training, such as Osamu Mikumo, are
+            not permitted to use their Triggers outside of headquarters. But
+            when the mysterious new student in his class is dragged into a
+            forbidden area by bullies, they are attacked by Neighbors, and Osamu
+            has no choice but to do what he believes is right. Much to his
+            surprise, however, the transfer student Yuuma Kuga makes short work
+            of the aliens, revealing that he is a humanoid Neighbor in disguise.
+          </p>
+        </div>
+
+        <!-- PV Section -->
+        <!-- PV Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">PV (Promotional Video)</h3>
+          <div class="relative w-full" style="padding-top: 56.25%">
+            <!-- 16:9 Aspect Ratio -->
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/ERJrBtUe4Lg"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Characters Section -->
+        <div class="mt-6">
+          <h3 class="section-header text-xl">Characters</h3>
+          <div class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Character 1: Conan Edogawa -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/KUga.jpg"
+                alt="Yuuma Kuga"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Yuuma Kug</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Yuuma Kuga is one of the main protagonists of World Trigger and
+                is a Neighbor with high Trion level and Trigger Skills. Yuuma is
+                very short for his age. He has white hair and red eyes. He wears
+                a blue suit top and gray bottoms traditional of Japanese high
+                school students. When not in Trigger mode or school uniform, he
+                usually wears a black hoodie with a paw symbol and the text
+                "UMA" (which stands for "Unidentified Mysterious Animal"), and
+                baggy jeans pants.
+              </p>
+            </div>
+
+            <!-- Character 2: Ran Mouri -->
+            <div class="bg-gray-200 p-4 rounded-lg text-center">
+              <img
+                src="/images/Amatori.jpg"
+                alt="Chika  Amatori"
+                class="character-img mx-auto mb-4 rounded-lg"
+              />
+              <h4 class="font-bold text-lg">Chika Amatori</h4>
+              <p class="text-gray-700 mt-2">Information</p>
+              <p class="text-sm text-gray-600">
+                Chika Amatori is one of the main protagonists of World Trigger.
+                Chika is very shy, and rarely says much. She has very few
+                friends, because she voluntarily distances herself from others.
+                She believes that she'll just get hurt when those she gets close
+                to get kidnapped by the Neighbors. She is really patient and
+                serious and can concentrate very well, but she has low
+                confidence and can't see her own potential. After meeting Yuuma
+                and joining Tamakoma Branch, however, she starts warming up to
+                others and becoming more sociable and confident on herself. She
+                is a kind-hearted person and admits that she is terrified of
+                hurting others.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Page Button -->
+        <div class="mt-6 text-center">
+          <a
+            href="/src/main.html"
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500"
+          >
+            Back to Main Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-white text-center mt-6">
+      <p>&copy; 2024 Anime Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
